@@ -1,0 +1,50 @@
+body{
+    background-image:url("cwgf.gif");
+    background-size: cover;
+    background-repeat: repeat;
+}
+ 
+ 
+ .main{
+        height:100%;
+        width:100%;
+        background:rgba(21, 233, 233,0.0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.calculator{
+    background: rgb(31, 63, 65);
+    padding: 15px;
+    border-radius: 5px;
+}
+.calculator form input{
+    border-radius: 15px;
+    border:0;
+    width: 45px;
+    height: 45px;
+    padding: 2px;
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.2),5px 5px 15px rgba(255,255,255,0.2);
+    background: transparent;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 15px;
+
+}
+form .displayvalue{
+    display: flex;
+    justify-content: flex-end;
+    margin:5px 0;
+}
+form .displayvalue input{
+    text-align: right;
+    flex:1;
+    font-size: 40px;
+    box-shadow: none;
+    height:80px;
+    width: 165px;
+}
+form input.equalto{
+    width:125px;
+}

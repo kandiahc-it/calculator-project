@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet"  href="calculatorstyle.css">
+    </head>
+    <body >
+      
+        <div class="main">
+            <div class="calculator">
+                <form>
+            <div class="displayvalue">
+                <input type="text" name="displayvalue">
+            </div>
+            <div>
+                <input type="button" value="AC" onclick=" displayvalue.value=''">
+                <input type="button" value="DEL" onclick=" displayvalue.value=displayvalue.value.slice(0,-1)">
+                <input type="button" value="."  onclick=" displayvalue.value+='.'">
+                <input type="button" value="/" onclick=" displayvalue.value+='/'">
+            </div>
+            <div>
+                <input type="button" value="7" onclick=" displayvalue.value+='7'">
+                <input type="button" value="8" onclick=" displayvalue.value+='8'">
+                <input type="button" value="9" onclick=" displayvalue.value+='9'">
+                <input type="button" value="*" onclick=" displayvalue.value+='*'">
+            </div>
+            <div>
+                <input type="button" value="4" onclick=" displayvalue.value+='4'">
+                <input type="button" value="5" onclick=" displayvalue.value+='5'">
+                <input type="button" value="6" onclick=" displayvalue.value+='6'">
+                <input type="button" value="-" onclick=" displayvalue.value+='-'">
+            </div>
+            <div>
+                <input type="button" value="1" onclick=" displayvalue.value+='1'">
+                <input type="button" value="2" onclick=" displayvalue.value+='2'">
+                <input type="button" value="3" onclick=" displayvalue.value+='3'">
+                <input type="button" value="+" onclick=" displayvalue.value+='+'">
+            </div>
+            <div>
+                <input type="button" value="00" onclick=" displayvalue.value+='00'">
+                <input type="button" value="0" onclick=" displayvalue.value+='00'">
+                <input type="button" value="=" class="equalto" onclick="displayvalue.value= eval(displayvalue.value)">
+              
+            </div>
+            
+        </form>
+        </div>
+        </div>
+    </body>
+</html>
